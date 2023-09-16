@@ -8,11 +8,10 @@
 
   &:has(.page__menu:target) {
     overflow: hidden;
+    overflow-x: hidden;
   }
 
   &__body {
-    margin: 0;
-    min-width: 320px;
     background: $bg-secondary-color;
 
     &--form {
