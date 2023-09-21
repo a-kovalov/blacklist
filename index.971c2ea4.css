@@ -7,8 +7,14 @@ body, h1, h2, h3, p, ul {
   padding: 0;
 }
 
-body {
+html, body {
   overflow-x: hidden;
+}
+
+@media screen and (width >= 320px) and (width <= 374px) {
+  html, body {
+    margin-right: -15%;
+  }
 }
 
 .container {
@@ -136,18 +142,6 @@ select:-webkit-autofill:focus {
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   position: relative;
-}
-
-@media screen and (width >= 320px) and (width <= 374px) {
-  .header {
-    margin-right: -15%;
-  }
-}
-
-@media screen and (width: 375px) {
-  .header {
-    margin-right: -1%;
-  }
 }
 
 @media (width >= 1024px) {
@@ -1728,18 +1722,6 @@ select:-webkit-autofill:focus {
 @media (width >= 2560px) {
   .footer {
     padding-inline: 707px;
-  }
-}
-
-@media screen and (width >= 320px) and (width <= 374px) {
-  .footer {
-    margin-right: -15%;
-  }
-}
-
-@media screen and (width: 375px) {
-  .footer {
-    margin-right: -1%;
   }
 }
 
