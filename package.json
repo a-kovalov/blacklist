@@ -4,7 +4,7 @@
   "homepage": "https://a-kovalov.github.io/blacklist/",
   "scripts": {
     "deploy": "parcel build src/index.html --public-url ./ && gh-pages -d dist",
-    "start": "parcel --open no-cache",
+    "start": "parcel --open",
     "build": "parcel build"
   },
   "devDependencies": {
