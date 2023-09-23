@@ -1033,7 +1033,7 @@ select:-webkit-autofill:focus {
   display: flex;
 }
 
-.services-card:last-child() {
+.services-card:last-child {
   margin-bottom: 0;
 }
 
@@ -1673,9 +1673,14 @@ select:-webkit-autofill:focus {
   font-weight: bold;
 }
 
+.faq__accordion.active:after {
+  content: "−";
+}
+
 .faq__panel {
   background-color: #f2f6fa;
   max-height: 0;
+  margin-bottom: 20px;
   padding: 0 18px;
   transition: max-height .3s ease-out;
   overflow: hidden;
@@ -1697,7 +1702,7 @@ select:-webkit-autofill:focus {
   background-color: #2c2c2c;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding-block: 72px 80px;
+  padding-block: 72px 40px;
   padding-inline: 20px;
 }
 
@@ -1727,13 +1732,13 @@ select:-webkit-autofill:focus {
 
 @media (width >= 640px) {
   .footer {
-    padding-block: 180px 80px;
+    padding-block: 80px 40px;
   }
 }
 
 @media (width >= 1024px) {
   .footer {
-    padding-block: 180px 84px;
+    padding-block: 80px 44px;
   }
 }
 
@@ -1863,6 +1868,12 @@ select:-webkit-autofill:focus {
   font-family: Poppins, sans-serif;
   font-size: 13px;
   font-weight: 700;
+}
+
+@media (width >= 1024px) {
+  .footer__copyright {
+    text-align: left;
+  }
 }
 
 .footer__nav-bottom {

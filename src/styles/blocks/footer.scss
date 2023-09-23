@@ -1,16 +1,16 @@
 .footer {
-  padding-block: 72px 80px;
+  padding-block: 72px 40px;
   @include contentPaddingInline;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: $bg-dark-color;
 
   @include onTablet {
-    padding-block: 180px 80px;
+    padding-block: 80px 40px;
   }
 
   @include onSmallDesktop {
-    padding-block: 180px 84px;
+    padding-block: 80px 44px;
   }
 
   &__bar {
@@ -123,6 +123,10 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
+
+    @include onSmallDesktop {
+      text-align: left;
+    }
   }
 
   &__nav-bottom {
